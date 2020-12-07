@@ -1,0 +1,218 @@
+@font-face {
+    font-family: headers;
+    src: url("./d1.ttf");
+  }
+  @font-face {
+    font-family: footer;
+    src: url("./d2.ttf");
+  }
+  *:focus {
+    outline: none;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    scroll-behavior: smooth;
+    pointer-events: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+    background-color: green;
+    #dot3Main{
+        display: none;
+        position: fixed;
+        top: 5vh;
+        left: 10vw;
+        z-index: 150;
+        fill: black;
+    }
+    .rBack{
+        width: 100%;
+        min-height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .menus{
+        width: 100%;
+        min-height: 100vh;
+        position: relative;
+        max-width: 1000px;
+        // background-color: blue;
+        .dotcont{
+            pointer-events: all;
+            width: 100%;
+            max-width: 1000px;
+            position: fixed;
+            top: 20vh;
+            left: 50%;
+            transform: translateX(-50%);
+            // background-color: #b30000;
+            height: 10px;
+            padding: 0 18vw;
+            #dot3{
+                pointer-events: all;
+                float: left;
+                width: 50px;
+                margin-left: 18vw;
+                top: 19vh;
+                left: 50%;
+                z-index: 150;
+                fill: black;
+                transition: all 0.3s ease-in-out;
+                @media only screen and (max-width: 768px){
+                    width: 20px;
+                }
+            }
+        }
+        .top{
+            width: 20vw;
+            max-width: 20vh;
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -15%);
+        }
+        .back{
+            position: fixed;
+            width: 100%;
+            max-width: 1000px;
+            height: 100%;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .theMenuCont{
+            pointer-events: all;
+            position: fixed;
+            top: 20vh;
+            text-align: center;
+            max-height: 66%;
+            overflow: scroll;
+            overflow-X: hidden;
+            width: 100%;
+            max-width: 1000px;
+            left: 50%;
+            transform: translateX(-50%);
+            // background-color: #b30000;
+            .theMenu{
+                margin-bottom: 7vh;
+                position: relative;
+                max-width: 1000px;
+                // background-color: green;
+                padding: 0 20vw;
+                h3{
+                    font-family: headers;
+                    z-index: 100;
+                    position: sticky;
+                    top: 0;
+                    background-image: linear-gradient(to left,rgba(#e4cc9c,0),#e4cc9c,#e4cc9c,#e4cc9c,#e4cc9c,rgba(#e4cc9c,0));
+                   
+                }
+                
+                p{
+                    font-size: smaller;
+                }
+                div{
+                    h4{
+                        margin-top: 4vh;
+                        margin-top: 2vh;
+                        position: sticky;
+                        top: 20px;
+                        background-image: linear-gradient(to left,rgba(#e4cc9c,0),#e4cc9c,#e4cc9c,#e4cc9c,#e4cc9c,rgba(#e4cc9c,0));
+                    }
+                    .drinks{
+                        text-align: left;
+                        display: grid;
+                        grid-template-columns: 2fr 1fr;
+                        padding-left: 5vw;
+                    }
+                }
+                .cardi{
+                   
+                    div{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        column-gap: 1vw;
+                        text-align: justify;
+                        margin: 2vw;
+                        // font-size: 2.5vw;
+                        align-items: center;
+                        @media only screen and (max-width: 768px){
+                            grid-template-columns: 1fr;
+                            // font-size: 16px;
+                        }
+                        img{
+                            width: 100%;
+                            max-width: 1000px;
+                        }
+                    }
+                }
+            }
+            .theMenuFooter{
+                min-height: 25vh;
+            }
+        }
+        .footer{
+            position: fixed;
+            bottom: 6vh;
+            left: 50%;
+            transform: translateX(-50%);
+            // font-size: 10px;
+            text-align: center;
+            width: 90vw;
+            max-width: 1000px;
+            font-family: footer;
+            @media only screen and (max-width: 768px){
+                font-size: 10px;
+            }
+        }
+        .menuList{
+            position: fixed;
+            border-radius: 7px;
+            top: 18vh;
+            left: 20vw;
+            background-color: #e4cc9c;
+            padding: 5vw;
+            font-family: headers;
+            font-size: smaller;
+            opacity: 0;
+            pointer-events: none;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+            p{
+                margin: 3vh;
+                padding: 7px;
+                border-radius: 10px 5px 10px 0;
+            }
+        }
+    }
+}

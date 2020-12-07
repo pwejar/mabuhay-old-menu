@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mabuhay</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" type="image/png" href="./icons/as.png" />
+</head>
+<body onclick="closeMenu()">
+    <div class="container">
+        <svg id="dot3Main" onclick="checked()" width="30" height="30" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="lineOneM" d="M8.1447 2.5341H1.8033C1.34248 2.5341 0.968903 2.81992 0.968903 3.1725C0.968903 3.52508 1.34248 3.8109 1.8033 3.8109H8.1447C8.60553 3.8109 8.9791 3.52508 8.9791 3.1725C8.9791 2.81992 8.60553 2.5341 8.1447 2.5341Z" />
+            <path id="lineTwoM" d="M8.1447 4.6133H1.8033C1.34248 4.6133 0.968903 4.89912 0.968903 5.2517C0.968903 5.60428 1.34248 5.8901 1.8033 5.8901H8.1447C8.60553 5.8901 8.9791 5.60428 8.9791 5.2517C8.9791 4.89912 8.60553 4.6133 8.1447 4.6133Z"  />
+            <path id="lineThreeM" d="M8.1447 6.6924H1.8033C1.34248 6.6924 0.968903 6.97822 0.968903 7.3308C0.968903 7.68338 1.34248 7.9692 1.8033 7.9692H8.1447C8.60553 7.9692 8.9791 7.68338 8.9791 7.3308C8.9791 6.97822 8.60553 6.6924 8.1447 6.6924Z" />
+        </svg>
+        <img src="./icons/back.jpeg" class="rBack">
+        <div class="menus" >
+            <img src="./icons/scroll.png" class="back">
+            <div class="theMenuCont" id="menuContId">
+                <div class="theMenu" id="houseSpecial">
+                    <h3>House specials</h3>
+                    <div class="cardi">
+                        <h4>“Mongolian Hot Pot"</h4>
+                        <div>
+                            <img src="./menus/mongolia.jpg" alt="">
+                            <p>On Order only 24 Hours in advance Minimum 2 Pax You cook yourself on the table. Choose from Chicken, Beef, Lamb, Fish Base Soup, with a variety of vegetables, mushrooms and lean Meats.</p>
+                        </div>
+                        <p><b>1500 KSH Per Person</b></p>
+                    </div>
+                    <div class="cardi">
+                        <h4>Tom Yum </h4>
+                        <div>
+                            <img src="./menus/tum.jpg" alt="">
+                            <p>Traditional Thai National Dish 
+                                Either with Chicken 
+                                or Seafood accompanied by Rice</p>
+                        </div>
+                        <p><b>Ksh 1200</b></p>
+                    </div>
+                </div>
+                <div class="theMenu" id="mainaCourse">
+                    <h3>Main Course</h3>
+                    <div >
+                        <h4>TRADITIONAL FISH & CHIPS</h4>
+                        <div>
+                            <p>Tender Fish Fillet in orig.batter 
+                                with remoulade sauce and crispy fries</p>
+                        </div>
+                        <p><b>Ksh 1150</b></p>
+                    </div>
+                    <div>
+                        <h4>MARIBEL’S SECRET</h4>
+                        <div>
+                            <p>Traditional Fillipino Chicken Adobo served 
+                                with coconut rice</p>
+                        </div>
+                        <p><b>Ksh 1250</b></p>
+                    </div>
+                    <div>
+                        <h4>CHICKEN SATAY </h4>
+                        <div>
+                            <p>skewers with mango 
+                                dip on exotic salad bed</p>
+                        </div>
+                        <p><b>Ksh 900</b></p>
+                    </div>
+                    <div>
+                        <h4>FILETSTEAK "BORACAY" </h4>
+                        <div>
+                            <p>300 g with 
+                                pancit noodles and garden vegetables</p>
+                        </div>
+                        <p><b>Ksh 1350</b></p>
+                    </div>
+                    <div>
+                        <h4>CHICKEN THIKA</h4>
+                        <div>
+                            <p> with Jeera Rice 
+                                and yoghurt dip</p>
+                        </div>
+                        <p><b>Ksh 550</b></p>
+                    </div>
+                    <div>
+                        <h4>MABUHAI MIXED GRILL</h4>
+                        <div>
+                            <p>Assortment of Meats Lamb, Beef, Chicken,
+                                Pork smoke Grilled with Potato Wedges and garden Salad</p>
+                        </div>
+                        <p><b>Ksh 1850</b></p>
+                    </div>
+                    <div>
+                        <h4>BUCKET OF RIBS</h4>
+                        <div>
+                            <p>Tender Pork Ribs from the smoke ofen with garlic bread</p>
+                        </div>
+                        <p><b>Ksh 1700</b></p>
+                    </div>
+                </div>
+                <div class="theMenu" id="veggieCon">
+                    <h3>Vegetarian Corner</h3>
+                    <div >
+                        <h4>Lime-Curry Tofu Stir-Fry 
+                            on Jasmine Rice </h4>
+                        <div>
+                            <p></p>
+                        </div>
+                        <p><b>Ksh 750</b></p>
+                    </div>
+                    <div>
+                        <h4>Savannah's Best Marinated Portobello 
+                            Mushroomson Couscous </h4>
+                        <div>
+                            <p></p>
+                        </div>
+                        <p><b>Ksh 850</b></p>
+                    </div>
+                    <div>
+                        <h4>Red Lentil Curry
+                            with Basmati Ric</h4>
+                        <div>
+                            <p></p>
+                        </div>
+                        <p><b>Ksh 650</b></p>
+                    </div>
+                    
+                </div>
+                <div class="theMenu" id="soupsand">
+                    <h3>SOUPS & SIDE SALADS</h3>
+                    <div >
+                        <h4>SOUP OF THE DAY</h4>
+                        <div>
+                            <p>Our chefs daily creation</p>
+                        </div>
+                        <p><b>Ksh 550</b></p>
+                    </div>
+                    <div>
+                        <h4>SEAFOOD GUMBO</h4>
+                        <div>
+                            <p>With shrimp, crewfish tails & andouille sausage</p>
+                        </div>
+                        <p><b>Ksh 750</b></p>
+                    </div>
+                    <div>
+                        <h4>MISO SOUP</h4>
+                        <div>
+                            <p>With tofu, scallions, and seaweed</p>
+                        </div>
+                        <p><b>Ksh 600</b></p>
+                    </div>
+                    <div>
+                        <h4>TOM YUM </h4>
+                        <div>
+                            <p>Thai Fish Soup with coconut</p>
+                        </div>
+                        <p><b>Ksh 550</b></p>
+                    </div>
+                    <div>
+                        <h4>SQUID SALAD</h4>
+                        <div>
+                            <p>Marinated Squid</p>
+                        </div>
+                        <p><b>Ksh 750</b></p>
+                    </div>
+                    <div>
+                        <h4>THAI PAPAYA SALAD</h4>
+                        <div>
+                            <p>With Cashews and Chicken Stripes</p>
+                        </div>
+                        <p><b>Ksh 850</b></p>
+                    </div>
+                   
+                </div>
+                <div class="theMenu" id="drinkList">
+                    <h3>Drinks List</h3>
+                    <div >
+                        <h4>Hot Drinks</h4>
+                        <div class="drinks">
+                            <p>Grande Capuccino</p> <p><b>Ksh 270</b></p>
+                            <p>Latte Machiato</p> <p><b>Ksh 250</b></p>
+                            <p>Hot Swiss Choclate</p> <p><b>Ksh 250</b></p>
+                            <p>Herbal Tea</p> <p><b>Ksh 160</b></p>
+                        </div>
+                    </div>
+                    <div >
+                        <h4>Soft Drinks </h4>
+                        <div class="drinks">
+                            <p>Soda</p> <p><b>Ksh 130</b></p>
+                            <p>Fresh Juice of the Day</p> <p><b>Ksh 150</b></p>
+                            <p>Mineral Water    0.5 L </p> <p><b>Ksh 80</b></p>
+                            <p>Mineral Water    1. L</p> <p><b>Ksh 130</b></p>
+                        </div>
+                    </div>
+                    <div >
+                        <h4>Sparkling </h4>
+                        <div class="drinks">
+                            <p>Mineral Water    0.5 L </p> <p><b>Ksh 130</b></p>
+                            <p>Mineral Water    1. L</p> <p><b>Ksh 150</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="theMenu" id="alcoholicDr">
+                    <h3>Alcoholic Drinks</h3>
+                    <div >
+                        <h4>WINES</h4>
+                        <div class="drinks">
+                            <p>White wine per glassCulemborg south africa /cape white 
+                                2019  0.2 l glass</p> <p><b>Ksh 550</b></p>
+                            <p>Kleine Rust south africa Sauvignon Blanc 2018 0.2 l glass</p> <p><b>Ksh 650</b></p>
+                            <p>Zapailar Chile Sauvignon Blanc2018 0.2 glass</p> <p><b>Ksh 550</b></p>
+                            <p>Red WineHouse Wine 0.2 glass</p> <p><b>Ksh 500</b></p>
+                        </div>
+                    </div>
+                    <div >
+                        <h4>BEERS</h4>
+                        <div class="drinks">
+                            <p>Pilsner          0.5   L</p> <p><b>Ksh 260</b></p>
+                            <p>Tusker           0.5   L</p> <p><b>Ksh 260</b></p>
+                            <p>Tusker Malt     0.33 L</p> <p><b>Ksh 220</b></p>
+                            <p>White Cape     0.5  L</p> <p><b>Ksh 240</b></p>
+                            <p>guinness          0.5   L</p> <p><b>Ksh 260</b></p>
+                            <p>House Beer      0.33 L </p> <p><b>Ksh 350</b></p>
+                        </div>
+                    </div>
+                    <div >
+                        <h4>SHOTS PER TOT </h4>
+                        <div class="drinks">
+                            <p>Olmeca Tequilla</p> <p><b>Ksh 250</b></p>
+                            <p>Sambuca Molinari</p> <p><b>Ksh 220</b></p>
+                            <p>Gordon Dry Gin</p> <p><b>Ksh 250</b></p>
+                            <p>Single Malt Glenfiddich  12 Years</p> <p><b>Ksh 480</b></p>
+                            <p><span>18 Years</span></p> <p><b>Ksh 650</b></p>
+                            <p>Singleton     12 Years</p> <p><b>Ksh 380</b></p>
+                            <p><span>18 Years</span></p> <p><b>Ksh 500</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="theMenu" id="cocktailser">
+                    <h3>Cocktail</h3>
+                    <div >
+                        <h4>SUNSHINE</h4>
+                        <div>
+                            <p>Havana club rum, Martini, Pineapple Juice and Grenadine syrup</p>
+                        </div>
+                        <p><b>Ksh 750</b></p>
+                    </div>
+                    <div>
+                        <h4>MAI TAI</h4>
+                        <div>
+                            <p>Havana club rum, Pineapple rum, Orange Curacao and lime juice</p>
+                        </div>
+                        <p><b>Ksh 850</b></p>
+                    </div>
+                    <div>
+                        <h4>SEX ON THE BEACH </h4>
+                        <div>
+                            <p>Pearch Liquor, Orange Juice, Pineapple Juice, Vodka Cranberry Juice</p>
+                        </div>
+                        <p><b>Ksh 750</b></p>
+                    </div>
+                    <div>
+                        <h4>WHITE LADY </h4>
+                        <div>
+                            <p>Dry Gin, Triple sec, Fresh lemon juice and sugercane syrup </p>
+                        </div>
+                        <p><b>Ksh 750</b></p>
+                    </div>
+                    <div>
+                        <h4>COSMOPOLITAN </h4>
+                        <div>
+                            <p> Vodka, Triple sec, Cramberry Juice and Lime Juice</p>
+                        </div>
+                        <p><b>Ksh 650</b></p>
+                    </div>
+                </div>
+                <div class="theMenuFooter">
+
+                </div>
+            </div>
+            <div class="footer">
+                <P>...WHERE LOCALS AND VACATIONERS COME TOGETHER</P>
+            </div>
+            <img src="./icons/as.png" class="top">
+            <div class="menuList" id="theMunuList" >
+                <p class="menuBT" id="ao1" onclick="smoothScroll('houseSpecial')">House specials</p>
+                <p class="menuBT" id="ao2" onclick="smoothScroll('mainaCourse')">Main Course</p>
+                <p class="menuBT" id="ao3" onclick="smoothScroll('veggieCon')">Vegetarian Corner</p>
+                <p class="menuBT" id="ao4" onclick="smoothScroll('soupsand')">SOUPS & SIDE SALADS</p>
+                <p class="menuBT" id="ao5" onclick="smoothScroll('drinkList')">Drinks List</p>
+                <p class="menuBT" id="ao6"onclick="smoothScroll('alcoholicDr')">Alcoholic Drinks</p>
+                <p class="menuBT" id="ao7" onclick="smoothScroll('cocktailser')">Cocktail</p>
+            </div>
+            <div id="dot567" class="dotcont" onclick="checked()" >
+                <svg id="dot3"  viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="lineOne" d="M8.1447 2.5341H1.8033C1.34248 2.5341 0.968903 2.81992 0.968903 3.1725C0.968903 3.52508 1.34248 3.8109 1.8033 3.8109H8.1447C8.60553 3.8109 8.9791 3.52508 8.9791 3.1725C8.9791 2.81992 8.60553 2.5341 8.1447 2.5341Z" />
+                    <path id="lineTwo" d="M8.1447 4.6133H1.8033C1.34248 4.6133 0.968903 4.89912 0.968903 5.2517C0.968903 5.60428 1.34248 5.8901 1.8033 5.8901H8.1447C8.60553 5.8901 8.9791 5.60428 8.9791 5.2517C8.9791 4.89912 8.60553 4.6133 8.1447 4.6133Z"  />
+                    <path id="lineThree" d="M8.1447 6.6924H1.8033C1.34248 6.6924 0.968903 6.97822 0.968903 7.3308C0.968903 7.68338 1.34248 7.9692 1.8033 7.9692H8.1447C8.60553 7.9692 8.9791 7.68338 8.9791 7.3308C8.9791 6.97822 8.60553 6.6924 8.1447 6.6924Z" />
+                </svg>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
